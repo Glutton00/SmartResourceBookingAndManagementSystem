@@ -2,12 +2,12 @@ package DTO;
 
 import java.util.List;
 
-public class Cart {
+public class CartDTO {
 	private String cartId;
 	private int numberOfItems;
-	private List<Resource> cartItems;
+	private List<ResourceDTO> cartItems;
 
-	public Cart(String cartId, List<Resource> cartItems) {
+	public CartDTO(String cartId, List<ResourceDTO> cartItems) {
 		this.cartId = cartId;
 		this.cartItems = cartItems;
 		this.numberOfItems = cartItems.size();
@@ -29,11 +29,11 @@ public class Cart {
 		this.numberOfItems = numberOfItems;
 	}
 
-	public List<Resource> getCartItems() {
+	public List<ResourceDTO> getCartItems() {
 		return cartItems;
 	}
 
-	public void setCartItems(List<Resource> cartItems) {
+	public void setCartItems(List<ResourceDTO> cartItems) {
 		this.cartItems = cartItems;
 	}
 
