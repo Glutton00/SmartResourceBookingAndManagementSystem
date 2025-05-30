@@ -52,6 +52,8 @@ public class Resourcedto {
 		return isAvailable;
 	}
 
+	
+	
 	public void setAvailable(boolean isAvailable) {
 		this.isAvailable = isAvailable;
 	}
