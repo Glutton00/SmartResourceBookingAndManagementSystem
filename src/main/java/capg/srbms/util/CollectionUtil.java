@@ -1,13 +1,10 @@
-package com.capg.srbm.util;
+package capg.srbms.util;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import dto.Booking;
-import dto.Cart;
-import dto.Resource;
-import dto.User;
+import capg.srbms.dto.*;
 
 public class CollectionUtil {
 	

@@ -1,4 +1,4 @@
-package com.capg.srbm;
+package capg.srbms;
 
 public class App {
   public static void main(String[] args) {

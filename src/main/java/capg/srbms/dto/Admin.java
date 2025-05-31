@@ -1,4 +1,4 @@
-package com.capg.srbm.dto;
+package capg.srbms.dto;
 
 public class Admin extends User {
     private String role;

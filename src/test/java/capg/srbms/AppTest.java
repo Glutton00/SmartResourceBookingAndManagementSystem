@@ -1,4 +1,4 @@
-package com.capg.srbm;
+package capg.srbms;
 
 import org.junit.jupiter.api.Test;
 
