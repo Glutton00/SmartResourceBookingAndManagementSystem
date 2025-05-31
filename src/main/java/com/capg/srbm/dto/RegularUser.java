@@ -1,4 +1,4 @@
-package dto;
+package com.capg.srbm.dto;
 
 public class RegularUser extends User {
     private String role;
@@ -11,4 +11,3 @@ public class RegularUser extends User {
     public String getRole() { return role; }
     
 }
-

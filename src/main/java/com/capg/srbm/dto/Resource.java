@@ -1,4 +1,4 @@
-package dto;
+package com.capg.srbm.dto;
 
 public class Resource {
 	private String resourceId;

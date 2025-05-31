@@ -1,4 +1,5 @@
-package dto;
+package com.capg.srbm.dto;
+
 
 public class ResourceManager extends User {
     private String role;
