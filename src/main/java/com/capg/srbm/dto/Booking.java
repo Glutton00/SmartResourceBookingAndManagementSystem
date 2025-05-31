@@ -1,4 +1,4 @@
-package dto;
+package com.capg.srbm.dto;
 
 import java.util.Date;
 
