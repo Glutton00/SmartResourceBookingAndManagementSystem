@@ -9,6 +9,6 @@ public class ResourceManager extends User {
     }
 
     public String getRole() {
-         return this.role; 
-    }
+         return this.role;
+    }
 }
