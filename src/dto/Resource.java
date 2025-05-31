@@ -1,7 +1,6 @@
 package dto;
 
 public class Resource {
-
 	private String resourceId;
 	private String resName;
 	private String resType;
