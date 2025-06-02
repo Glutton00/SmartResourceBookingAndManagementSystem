@@ -1,62 +1,83 @@
 package com.srbm.dto;
 
+import java.util.Objects;
+
 public class Resource {
+    private String resourceID;
+    private String resourceName;
+    private String resourceType;
+    private double resourceCost;
+    private boolean resourceIsAvailable;
 
-	    private String resourceId;
-	    private String resName;
-	    private String resType;
-	    private double resCost;
-	    private boolean isAvailable;
+    // Constructor
+    public Resource(String resourceID, String resourceName, String resourceType, double resourceCost, boolean resourceIsAvailable) {
+        this.resourceID = resourceID;
+        this.resourceName = resourceName;
+        this.resourceType = resourceType;
+        this.resourceCost = resourceCost;
+        this.resourceIsAvailable = resourceIsAvailable;
+    }
 
-	    public Resource(String resourceId, String resName, String resType, double resCost, boolean isAvailable) {
-	        this.resourceId = resourceId;
-	        this.resName = resName;
-	        this.resType = resType;
-	        this.resCost = resCost;
-	        this.isAvailable = isAvailable;
-	    }
+    @Override
+    public boolean equals(Object o) {
+        if (o == null || getClass() != o.getClass()) return false;
+        Resource resource = (Resource) o;
+        return Double.compare(resourceCost, resource.resourceCost) == 0 && resourceIsAvailable == resource.resourceIsAvailable && Objects.equals(resourceID, resource.resourceID) && Objects.equals(resourceName, resource.resourceName) && Objects.equals(resourceType, resource.resourceType);
+    }
 
-		public String getResourceId() {
-			return resourceId;
-		}
+    @Override
+    public int hashCode() {
+        return Objects.hash(resourceID, resourceName, resourceType, resourceCost, resourceIsAvailable);
+    }
 
-		public void setResourceId(String resourceId) {
-			this.resourceId = resourceId;
-		}
+    // Getters and Setters
+    public String getResourceID() {
+        return resourceID;
+    }
 
-		public String getResName() {
-			return resName;
-		}
+    public void setResourceID(String resourceID) {
+        this.resourceID = resourceID;
+    }
 
-		public void setResName(String resName) {
-			this.resName = resName;
-		}
+    public String getResourceName() {
+        return resourceName;
+    }
 
-		public String getResType() {
-			return resType;
-		}
+    public void setResourceName(String resourceName) {
+        this.resourceName = resourceName;
+    }
 
-		public void setResType(String resType) {
-			this.resType = resType;
-		}
+    public String getResourceType() {
+        return resourceType;
+    }
 
-		public double getResCost() {
-			return resCost;
-		}
+    public void setResourceType(String resourceType) {
+        this.resourceType = resourceType;
+    }
 
-		public void setResCost(double resCost) {
-			this.resCost = resCost;
-		}
+    public double getResourceCost() {
+        return resourceCost;
+    }
 
-		public boolean isAvailable() {
-			return isAvailable;
-		}
+    public void setResourceCost(double resourceCost) {
+        this.resourceCost = resourceCost;
+    }
 
-		public void setAvailable(boolean isAvailable) {
-			this.isAvailable = isAvailable;
-		}
-		
+    public boolean isResourceIsAvailable() {
+        return resourceIsAvailable;
+    }
 
+    public void setResourceIsAvailable(boolean resourceIsAvailable) {
+        this.resourceIsAvailable = resourceIsAvailable;
+    }
+
+    @Override
+    public String toString() {
+        return
+                "resourceID:" + resourceID +
+                ", Name='" + resourceName +
+                ", Type='" + resourceType +
+                ", resource Cost per day=" + resourceCost +
+                ", resourceIsAvailable=" + resourceIsAvailable;
+    }
 }
-
-
